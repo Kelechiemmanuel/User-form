@@ -1,14 +1,18 @@
-
+import {BrowserRouter, Route, Routes} from 'react-router-dom'
 import Demo from './component/Demo'
-import Demo1 from './component/Demo1'
-import { Demo3 } from './component/Demo3'
+import Demo3 from './component/Demo3'
+import Navigate from './component/Navigate'
+
 
 const App = () => {
   return (
-    <div>
-      <Demo />
-      <Demo3 />
-    </div>
+    <BrowserRouter>
+    <Navigate />
+     <Routes>
+      <Route path='/' element={<Demo />}/>
+      <Route path='demo3' element={<Demo3 />}/>
+     </Routes>
+    </BrowserRouter>
   )
 }
 

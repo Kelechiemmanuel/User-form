@@ -46,7 +46,7 @@ peer-focus:-top-4 peer-focus:text-sm peer-focus:text-blue-500'>
             </span>
         </div>
 
-        <button className='w-full bg-blue-500 text-white py-2 rounded-md'>
+        <button className='w-full bg-blue-500 text-white py-2 rounded-md cursor-pointer'>
             {isSignup ? 'Sign Up' : 'Login'}
         </button>
     </div>
@@ -64,7 +64,7 @@ peer-focus:-top-4 peer-focus:text-sm peer-focus:text-blue-500'>
 
         <button
             onClick={() => setIsSignup(!isSignup)}
-            className='border border-white px-6 py-2 rounded-md'
+            className='border border-white px-6 py-2 rounded-md cursor-pointer'
         >
             {isSignup ? 'Login' : 'Sign Up'}
         </button>

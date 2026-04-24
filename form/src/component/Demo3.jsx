@@ -46,3 +46,5 @@ export const Demo3 = () => {
         </div>
     )
 }
+
+export default Demo3
